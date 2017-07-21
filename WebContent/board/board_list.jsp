@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
 <body>
 <div id="wrapper">
 	<h1 id="title">BOARD LIST</h1>
-	<a id="go_main" href="../index.html">메인으로 가기</a><br />
+	<a id="go_main" href="../index.jsp">메인으로 가기</a><br />
 	<hr />
 	<div id="container">
 		<table border=1 style="border-collapse: collapse; width: 100%;">

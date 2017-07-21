@@ -19,6 +19,10 @@
 #join_yes_btn{background-color: blue; color: white; font-size: 15px; width: 100px;}
 #join_no_btn{background-color: red; color: white; font-size: 15px; width: 100px;}
 
+#member_list_tab{width: 90%; margin: 0 auto;}
+#member_list_tab th{background-color: yellow; border-bottom: solid 1px black; height: 40px;}
+#member_list_tab td{border-bottom: solid 1px #808080; height: 40px}
+
 
 
 
