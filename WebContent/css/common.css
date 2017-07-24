@@ -9,7 +9,7 @@ tbody{border: 1px solid red;}
 td{border-bottom: 1px solid black; margin-top: 20px;}
 th{text-align: center}
 .index-tab{border: 1px solid red;}
-.index-ul{border: 1px solid blue; text-align: center;}
+.index-ul{text-align: center;}
 
 
 .gms-text-center{text-align: center;}

@@ -1,4 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.text.SimpleDateFormat"%>
+<%@ page import="java.util.Date"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,8 +15,11 @@
 <div id="wrapper" class="width-100pro">
 
 <header>
-<h1 class="gms-text-center">성적관리시스템[GMS]</h1>
-</header>
+	<h1 class="gms-text-center">성적관리시스템[GMS]</h1>
+		<div>
+			<%=new SimpleDateFormat("yyyy년MM월dd일 a hh:mm:ss").format(new Date())%>
+		</div>
+	</header>
 <hr />	
 <div id = "container">
 <table id="index-tab">
@@ -56,11 +62,12 @@
 
 </diV>
 <footer>
-<div>
-  <p>Posted by: Hege Refsnes</p>
-  <p>Contact information: <a href="mailto:someone@example.com">
-  someone@example.com</a>.</p>
-</div>
+	<div>
+	  <p>Posted by: Hege Refsnes</p>
+	  <p>Contact information: <a href="mailto:someone@example.com">
+	  someone@example.com</a>.</p>
+	  <a href="util/jdbc_test.jsp">DB 연결 테스트</a>
+	</div>
 </footer>
 
 
