@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="com.gms.web.constant.DB"%>
+<%@ include file="../constants/db.jsp"%>
 <%@ page import="java.sql.*"%>
 <%
-	Class.forName(DB.ORDRIVER);
-	Connection conn=DriverManager.getConnection(DB.ORURL,DB.USERNAME,DB.PASSWORD);
+	Class.forName(ORDRIVER);
+	Connection conn=DriverManager.getConnection(ORURL,USERNAME,PASSWORD);
 	Statement stmt=conn.createStatement();
 	String sql="SELECT * FROM Member WHERE id='hong'";
 	ResultSet rs = stmt.executeQuery(sql);

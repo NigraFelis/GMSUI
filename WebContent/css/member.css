@@ -12,6 +12,7 @@
 #login_btn{background-color: blue;color: white;width: 160px;height:50px;}
 #cancel_btn{background-color: red;color: white;width: 160px;height:50px;}
 /*join.html*/
+#join_form{width:300px; margin: auto;}
 #join_id{width: 100px; display: inline-block;}
 #join_pass{width: 100px; display: inline-block;}
 #join_name{width: 100px; display: inline-block;}
@@ -22,7 +23,8 @@
 #member_list_tab{width: 90%; margin: 0 auto;}
 #member_list_tab th{background-color: yellow; border-bottom: solid 1px black; height: 40px;}
 #member_list_tab td{border-bottom: solid 1px #808080; height: 40px}
-
+/* member_search_box */
+#member_search_box{width:300px; margin:0 auto;}
 
 
 

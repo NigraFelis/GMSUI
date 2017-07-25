@@ -1,22 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<%@ include file="./member_header.jsp" %>
 
-<title>학생 등록</title>
-<link rel="stylesheet" href="../css/member.css" />
-</head>
-<body>
-	<div id="wrapper">
-	<header>
-		<h1 id="title">JOIN</h1>
-		<a id="go_main" href="../index.jsp">메인으로 가기</a><br />
-	</header>
-		<hr/>
 		<div id="container">
-			<form id="join_form" action="./member_detail.jsp" method=get>
+			<form id="join_form" action="<%=headRoot(request)%>/member/service_add.jsp" method=get>
 				<fieldset>
 				<legend>Join information:</legend>
 				<span id="join_id">ID: </span>
@@ -26,7 +12,7 @@
 				<span id="join_name">NAME: </span>
 				<input name="name" type="text" placeholder="이름"/><br />
 				<span id="join_birth">생년월일</span>
-				<input name="birthday"   type="text" /><br />
+				<input name="birthday"   type="date" /><br />
 				<input type="radio" name="gender" value="male" /> 남자
 				<input type="radio" name="gender" value="female" /> 여자
 				<br />
@@ -51,13 +37,4 @@
 				</fieldset>
 			</form>
 		</div>
-	</div>
-</body>
-
-
-
-
-
-
-
-</html>
+<%@ include file="../common/footer.jsp" %>
