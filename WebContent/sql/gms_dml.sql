@@ -64,11 +64,21 @@ INSERT INTO Board(article_seq,id,title, content,hitcount,regdate)
 VALUES(article_seq.nextval,'333','임요환 안녕',
 '인도하겠다는 피는 이 이상',0,SYSDATE);
 
+UPDATE Member SET phone ='010-1234-4567';
+SELECT * FROM Member WHERE ID;
+INSERT INTO MEMBER(phone)
+VALUES('010-1234-45678');
+SELECT * FROM tab;
+
 SELECT* FROM MEMBER WHERE name ='홍길동';
 
 INSERT INTO MEMBER (ID, PASSWORD, SSN, REGDATE) VALUES (66,66,66,SYSDATE);
 
 INSERT INTO BOARD(ID,%s,%s,%s,%s,%s) VALUES(?, ?, ?,SYSDATE,article_seq,?);
 
-SELECT * FROM MEMBER;
+
+
+
+SELECT ID FROM Member;
+SELECT * FROM Member;
 SELECT * FROM Board;

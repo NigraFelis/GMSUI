@@ -1,19 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ include file="../common/header.jsp" %>
-
-<%@ include file="../constants/db.jsp"%>
+<%@ include file="../member/member_header.jsp" %>
 <%@ page import="java.sql.*"%>
-<%
-	Class.forName(ORDRIVER);
-	String id = request.getParameter("userId");
-	String pass = request.getParameter("userPw");
-	String sql="SELECT PASSWORD FROM Member WHERE id=?";	
-	PreparedStatement pstmt = DriverManager.getConnection(ORURL,USERNAME,PASSWORD).prepareStatement(sql);	
-	pstmt.setString(1, id);
-	ResultSet rs = pstmt.executeQuery();
-	if(rs.next()){
-		String rsPass=rs.getString("password");
-		if(rsPass.equals(pass)){
+<%Map<String,String> map = exlogin(request);
+String id = request.getParameter("userId");
+String pass = request.getParameter("userPw");
+
+	if(!(map.isEmpty())){
+		if(pass.equals(map.get("pass"))){
 			%>
 			<div id = "container">
 			<table id="index-tab">
@@ -25,12 +18,13 @@
 				<tr>
 					<td>
 						<ul class="index-ul">
+						
 							<li><a href="<%= headRoot(request) %>/member/member_add.jsp">학생정보 추가</a></li>
-							<li><a href="<%= headRoot(request) %>/member/member_list.jsp">학생정보 목록</a></li>
-							<li><a href="<%= headRoot(request) %>/member/member_detail.jsp">학생 상세정보</a></li>
+							<li><a href="<%= headRoot(request) %>/member/member_list.jsp?action=list">학생정보 목록</a></li>
+							<li><a href="<%= headRoot(request) %>/member/member_search.jsp">학생 상세정보</a></li>
 							<li><a href="<%= headRoot(request) %>/member/member_update.jsp">학생정보 수정</a></li>
 							<li><a href="<%= headRoot(request) %>/member/member_delete.jsp">학생정보 삭제</a></li>
-							<li><a href="<%= headRoot(request) %>/member/member_search.jsp">학생정보 검색</a></li>
+							
 						</ul>
 					</td>
 					<td>

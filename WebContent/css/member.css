@@ -25,8 +25,11 @@
 #member_list_tab td{border-bottom: solid 1px #808080; height: 40px}
 /* member_search_box */
 #member_search_box{width:300px; margin:0 auto;}
-
-
+/* member_detail */
+#member_detail_tab{width: 90%; magin: 0 auto;}
+#member_detail_tab td{border: 1px solid #808080; height:30px;}
+#member_detail_tab tr>td:FIRST-CHILD {width: 200px;}
+#userImg{width: 200px;}
 
 
 

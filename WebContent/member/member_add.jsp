@@ -12,7 +12,7 @@
 				<span id="join_name">NAME: </span>
 				<input name="name" type="text" placeholder="이름"/><br />
 				<span id="join_birth">생년월일</span>
-				<input name="birthday"   type="date" /><br />
+				<input name="birthday" type="date" /><br />
 				<input type="radio" name="gender" value="male" /> 남자
 				<input type="radio" name="gender" value="female" /> 여자
 				<br />
